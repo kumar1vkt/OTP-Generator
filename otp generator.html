@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTp Gen</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+
+    <div class="container">
+<h2>OTP GENERATOR</h2>
+
+
+ <div class="div2">
+    <h3>Your Otp Here 🔐</h3>
+ </div>
+
+  <p id="btn"></p>
+
+  <div class="btn2">
+    <button type="button" id="buttongn" onclick="verify()">OTP Generate</button>
+  </div>
+
+
+    </div>
+
+    <script>
+        function verify(){
+
+const otpplength=4;
+             
+const otp=Math.floor(Math.random()*Math.pow(10,otpplength));
+
+document.getElementById('btn').innerText=otp;
+
+
+        }
+        document.getElementById('btn').addEventListener('click',verify);
+       
+      
+           
+     
+    </script>
+</body>
+</html>
